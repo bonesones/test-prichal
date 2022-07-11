@@ -5,8 +5,7 @@ body{
   margin: 0;
 }
 .top-image{
-  max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 main{
   display: flex;
@@ -19,9 +18,12 @@ main{
     justify-content: center;
     margin-top: 20px;
   }
+  .top-img{
+    max-width: 50%;
+  }
   .site-title{
-    background: url(../images/header-image2.jpg);
-    width: 600px;
+    background: url(../images/header-image.jfif);
+    max-width: 50%;
     height: 227px;
   }
   .site-title-description{
@@ -31,6 +33,9 @@ main{
     margin: 0 15px;
     bottom: 25px;
     width: 100%;
+  }
+  .top-image{
+    max-width: 50%;
   }
   h1 div{
     display: inline-block;
@@ -50,13 +55,12 @@ main{
     letter-spacing: 2px;
   }
   .usual{
-    width: 510px;
+    max-width: 535px;
     background-color: white;
     margin-right: 65px;
     font-size: 22px;
     text-indent: 35px;
     letter-spacing: 2px;
-    padding-left: 25px;
     color: rgb(106, 97, 188);
     height: 400px;
   }
@@ -65,35 +69,59 @@ main{
     justify-content: center;
     margin-top: 1em;
   }
+  #spec img{
+    width: 535px;
+  }
   .unusual{
-    width: 575px;
+    max-width: 600px;
     background-color: white;
     margin-left: 65px;
     font-size: 22px;
     text-indent: 35px;
     letter-spacing: 2px;
-    padding-left: 25px;
     color: rgb(106, 97, 188);
   }
   #last{
-    width: 575px;
+    width: 600px;
     background-color: white;
     font-size: 22px;
     text-indent: 35px;
     letter-spacing: 2px;
-    padding-left: 25px;
     color: rgb(106, 97, 188);
     position: relative;
     bottom: 7px;
   }
-
+  @media screen and (max-width: 1228px) {
+    h1 div{
+      font-size: 46px;
+    }
+    h1{
+      text-align: center;
+    }
+    #spec img{
+      max-width: 385px;
+      height: auto;
+    }
+    .sec img{
+      width: 600px;
+    }
+    .usual{
+      width: 383px;
+      font-size: 20px;
+    }
+    .main-description{
+      width: 90%;
+    }
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 598px){
+@media screen and (min-width: 320px) and (max-width: 999.9px){
   .main-header{
     display: flex;
-    margin-top: 20px;
     flex-direction: column;
     align-items: center;
+  }
+  .top-image{
+    width: 100%;
   }
   main{
     display: flex;
@@ -101,12 +129,16 @@ main{
     align-items: center;
   }
   .site-title{
-    background: url(../images/header-image2.jpg);
+    background: url(../images/header-image.jfif);
     width: 100%;
     height: 227px;
   }
   h1{
     text-align: center;
+  }
+  p{
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
   h1 div{
     display: inline-block;
@@ -138,15 +170,47 @@ main{
     background-color: white;
     text-indent: 35px;
     letter-spacing: 2px;
-    padding-left: 25px;
     color: rgb(106, 97, 188);
     height: auto;
     margin: 10px 0;
   }
+
   main img{
-    max-width: 100%;
-    height: auto;
+      max-width: 100%;
+      height: auto;
   }
+  #spec{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .unusual{
+    max-width: 100%;
+    background-color: white;
+    text-indent: 35px;
+    letter-spacing: 2px;
+    color: rgb(106, 97, 188);
+    height: auto;
+    margin: 10px 0;
+  }
+  #last{
+    background-color: white;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 601px){
+    main img{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    .usual, .unusual, .main-description, #last{
+      max-width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+}
+p{
+  padding-left: 25px;
 }
 .address{
   background-color: white;
