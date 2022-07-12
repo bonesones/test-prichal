@@ -76,11 +76,11 @@ main{
     text-indent: 35px;
     letter-spacing: 2px;
     color: rgb(106, 97, 188);
-    height: 400px;
+    height: 460px;
   }
   .sec{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 1em;
   }
   #spec img{
@@ -123,6 +123,9 @@ main{
     }
     .main-description{
       width: 90%;
+    }
+    .sec{
+      justify-content: space-between;
     }
   }
 }
