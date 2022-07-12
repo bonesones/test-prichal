@@ -10,20 +10,22 @@
     <header class = "main-header">
       <img src = "images/header-image.jpg" alt="Причал" height = "227" width="600" class = "top-image">
       <div class = "site-title">
-        <h1>
-          <div id = "id1">С</div>
-          <div id = "id2">в</div>
-          <div id = "id3">о</div>
-          <div id = "id4">й</div>
-          <div id = "id5">п</div>
-          <div id = "id6">р</div>
-          <div id = "id7">и</div>
-          <div id = "id8">ч</div>
-          <div id = "id9">а</div>
-          <div id = "id10">л</div>
-          <div id = "id11">.</div>
-          <div id = "id12">р</div>
-          <div id = "id13">ф</div>
+        <h1 id = "main-tag">
+          <div id = "id1">к</div>
+          <div id = "id2">у</div>
+          <div id = "id3">п</div>
+          <div id = "id4">и</div>
+          <div id = "id5">т</div>
+          <div id = "id6">ь</div>
+          <div id = "id7">п</div>
+          <div id = "id8">р</div>
+          <div id = "id9">и</div>
+          <div id = "id10">ч</div>
+          <div id = "id11">а</div>
+          <div id = "id12">л</div>
+          <div id = "id13">.</div>
+          <div id = "id14">р</div>
+          <div id = "id15">ф</div>
         </h1>
         <div class = "site-title-description">
           <div class = "address">
@@ -85,5 +87,23 @@
         </div>
       </section>
     </main>
+    <script>
+      const block = document.querySelector('.site-title')
+      const tag = document.querySelector('#main-tag');
+      if (block.clientWidth == document.documentElement.clientWidth && document.documentElement.clientWidth <= 550){
+        if (document.documentElement.clientWidth <= 338){
+          tag.style.fontSize = "25px";
+        } else {
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 15)}px`;
+        }
+      } else if (block.clientWidth == document.documentElement.clientWidth && document.documentElement.clientWidth >= 550){
+        if (document.documentElement.clientWidth > 630){
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 40)}px`;
+        } else {
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 20)}px`;
+
+        }
+      }
+    </script>
   </body>
 </html>
