@@ -88,21 +88,28 @@
       </section>
     </main>
     <script>
-      const block = document.querySelector('.site-title')
+      const block = document.querySelector('.site-title');
       const tag = document.querySelector('#main-tag');
-      if (block.clientWidth == document.documentElement.clientWidth && document.documentElement.clientWidth <= 550){
+      if (document.documentElement.clientWidth <= 550){
         if (document.documentElement.clientWidth <= 338){
           tag.style.fontSize = "25px";
         } else {
           tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 15)}px`;
         }
       } else if (block.clientWidth == document.documentElement.clientWidth && document.documentElement.clientWidth >= 550){
-        if (document.documentElement.clientWidth > 630){
-          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 40)}px`;
-        } else {
+        if (document.documentElement.clientWidth > 630 && document.documentElement.clientWidth < 810){
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 30)}px`;
+        } else if (document.documentElement.clientWidth < 630){
           tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 20)}px`;
-
+        } else if (document.documentElement.clientWidth > 810 ){
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 44)}px`;
         }
+      } else if (document.documentElement.clientWidth < 1095) {
+        tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 15)}px`;
+      } else if (document.documentElement.clientWidth > 1375) {
+        tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 28)}px`;
+      } else {
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 20)}px`;
       }
     </script>
   </body>
