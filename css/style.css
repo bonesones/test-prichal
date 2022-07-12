@@ -69,7 +69,6 @@ main{
     letter-spacing: 2px;
   }
   .usual{
-    max-width: 535px;
     background-color: white;
     margin-right: 65px;
     font-size: 22px;
@@ -87,7 +86,6 @@ main{
     width: 535px;
   }
   .unusual{
-    max-width: 600px;
     background-color: white;
     margin-left: 65px;
     font-size: 22px;
@@ -96,7 +94,6 @@ main{
     color: rgb(106, 97, 188);
   }
   #last{
-    width: 600px;
     background-color: white;
     font-size: 22px;
     text-indent: 35px;
@@ -109,23 +106,50 @@ main{
     h1{
       text-align: center;
     }
+    #first{
+      width: 50%;
+    }
+    #last-img{
+      width: 100%;
+    }
+    .usual{
+      width: 43%;
+      height: 460px;
+      font-size: 20px;
+    }
+    .unusual{
+      width: 50%;
+    }
     #spec img{
-      max-width: 385px;
-      height: auto;
+      width: 43%;
+    }
+    .sec{
+      justify-content: space-between;
+    }
+    .right-col{
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 1228.2px){
+    .sec img{
+      width: 560px;
+    }
+    .usual{
+      width: 535px;
+      height: 460px;
+      font-size: 20px;
+    }
+    .unusual{
+      width: 600px;
     }
     .sec img{
       width: 600px;
     }
-    .usual{
-      width: 383px;
-      height: 460px;
-      font-size: 20px;
+    #spec img{
+      width: 535px;
     }
-    .main-description{
-      width: 90%;
-    }
-    .sec{
-      justify-content: space-between;
+    .right-col{
+      width: 600px;
     }
   }
 }

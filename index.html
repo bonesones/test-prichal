@@ -7,7 +7,7 @@
     <link rel = "stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class = "main-header">
+    <header class = "main-header" style = "text-align: center">
       <img src = "images/header-image.jpg" alt="Причал" height = "227" width="600" class = "top-image">
       <div class = "site-title">
         <h1 id = "main-tag">
@@ -57,7 +57,7 @@
             Etiam faucibus urna in diam tempor, id efficitur lacus faucibus.
             Nulla pretium enim quis ultricies fringilla. Nullam rutrum faucibus lectus, ut varius velit tincidunt eu.</b>
         </article>
-        <img src = "images/prich1.jpg" alt = "Причал" width = "600" height = "460" style = "max-height: 460px;">
+        <img src = "images/prich1.jpg" alt = "Причал" width = "600" height = "460" style = "max-height: 460px;" id = "first">
       </section>
       <section class = "sec" id = "spec">
         <img src = "images/prich3.jpg" alt = "Причал" width = "535" height = "400">
@@ -78,7 +78,7 @@
             Nulla pretium enim quis ultricies fringilla. Nullam rutrum faucibus lectus, ut varius velit tincidunt eu.</b>
         </article>
         <div class = "right-col">
-          <img src = "images/prich2.jpg" alt = "Причал" width = "600" height = "250">
+          <img src = "images/prich2.jpg" alt = "Причал" width = "600" height = "250" id = "last-img">
           <article id = "last">
             <p>Nulla gravida, quam in convallis placerat, tellus ante semper massa,
               sit amet elementum justo nunc ut lacus. Sed at lectus vitae mi ultricies iaculis.
@@ -88,13 +88,14 @@
       </section>
     </main>
     <script>
+      document.querySelector('.main-description').style.width = `${document.querySelector('.sec').clientWidth}px`;
       const block = document.querySelector('.site-title');
       const tag = document.querySelector('#main-tag');
       if (document.documentElement.clientWidth <= 550){
-        if (document.documentElement.clientWidth <= 348){
+        if (document.documentElement.clientWidth <= 388){
           tag.style.fontSize = "25px";
         } else {
-          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 15)}px`;
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 13)}px`;
         }
       } else if (document.documentElement.clientWidth >= 550 && document.documentElement.clientWidth < 1000){
         if (document.documentElement.clientWidth > 630 && document.documentElement.clientWidth < 810){
@@ -111,7 +112,6 @@
       } else {
           tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 20)}px`;
       }
-      document.querySelector('.main-description').style.width = `${document.querySelector('.sec').clientWidth}px`;
     </script>
   </body>
 </html>
