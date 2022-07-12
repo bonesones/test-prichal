@@ -25,7 +25,7 @@ main{
   }
   .site-title{
     background: url(../images/header-image.jfif);
-    max-width: 600px;
+    width: 600px;
     height: 227px;
   }
   .site-title-description{
