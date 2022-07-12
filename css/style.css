@@ -44,6 +44,10 @@ main{
     color: rgb(0, 8, 193);
     line-height: 80px;
   }
+  #main-tag{
+    position: relative;
+    left: 30px;
+  }
   .main-description{
     display: block;
     background-color: white;
@@ -131,8 +135,10 @@ main{
     width: 100%;
     height: 227px;
   }
-  h1{
+  #main-tag{
     text-align: center;
+    position: relative;
+    left: 20px;
   }
   p{
     margin-block-start: 0;
