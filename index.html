@@ -57,7 +57,7 @@
             Etiam faucibus urna in diam tempor, id efficitur lacus faucibus.
             Nulla pretium enim quis ultricies fringilla. Nullam rutrum faucibus lectus, ut varius velit tincidunt eu.</b>
         </article>
-        <img src = "images/prich1.jpg" alt = "Причал" width = "600" height = "400">
+        <img src = "images/prich1.jpg" alt = "Причал" width = "600" height = "460" style = "max-height: 460px;">
       </section>
       <section class = "sec" id = "spec">
         <img src = "images/prich3.jpg" alt = "Причал" width = "535" height = "400">
@@ -91,12 +91,12 @@
       const block = document.querySelector('.site-title');
       const tag = document.querySelector('#main-tag');
       if (document.documentElement.clientWidth <= 550){
-        if (document.documentElement.clientWidth <= 390){
+        if (document.documentElement.clientWidth <= 348){
           tag.style.fontSize = "25px";
         } else {
           tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 15)}px`;
         }
-      } else if (block.clientWidth == document.documentElement.clientWidth && document.documentElement.clientWidth >= 550){
+      } else if (document.documentElement.clientWidth >= 550 && document.documentElement.clientWidth < 1000){
         if (document.documentElement.clientWidth > 630 && document.documentElement.clientWidth < 810){
           tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 30)}px`;
         } else if (document.documentElement.clientWidth < 630){
@@ -111,6 +111,7 @@
       } else {
           tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 20)}px`;
       }
+      document.querySelector('.main-description').style.width = `${document.querySelector('.sec').clientWidth}px`;
     </script>
   </body>
 </html>

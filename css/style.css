@@ -3,6 +3,7 @@ body{
   background: rgb(2, 189, 242);
   font-family: "Inter";
   margin: 0;
+  padding-bottom: 10px
 }
 .top-image{
   max-height: 100%;
@@ -17,16 +18,24 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
   .top-img{
     max-width: 600px;
   }
+  .right-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+  }
+
   .site-title{
     background: url(../images/header-image.jfif);
     width: 600px;
     height: 227px;
+  }
+  body{
+    padding-left: 20px;
   }
   .site-title-description{
     display: flex;
@@ -46,7 +55,7 @@ main{
   }
   #main-tag{
     position: relative;
-    left: 30px;
+    left: 20px;
   }
   .main-description{
     display: block;
@@ -71,7 +80,7 @@ main{
   }
   .sec{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 1em;
   }
   #spec img{
@@ -109,6 +118,7 @@ main{
     }
     .usual{
       width: 383px;
+      height: 460px;
       font-size: 20px;
     }
     .main-description{
@@ -137,8 +147,6 @@ main{
   }
   #main-tag{
     text-align: center;
-    position: relative;
-    left: 20px;
   }
   p{
     margin-block-start: 0;
