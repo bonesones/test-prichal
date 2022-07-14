@@ -374,6 +374,9 @@ p{
   background-color: white;
   height: 100px;
   width: 47%;
+  line-height: 100px;
+  font-size: 22px;
+  color: rgb(2, 189, 242);
 }
 a{
   background-color: white;
