@@ -47,6 +47,11 @@ li{
   z-index: 99999;
   position: fixed;
 }
+.gallary-btn{
+  background: url(../images/gallary.jpg);
+  height: 100px;
+  width: 47%;
+}
 
 @media screen and (min-width: 1000px){
   .main-header{
@@ -193,6 +198,11 @@ li{
       line-height: 1.5;
     }
   }
+  @media screen and (max-width: 1150px) {
+    .gallary-btn{
+      background: url(../images/gallary-lg.jpg);
+    }
+  }
   @media screen and (min-width: 1190px) {
     ol{
       line-height: 1.6;
@@ -228,6 +238,11 @@ li{
     .right-col{
       width: 50%;
     }
+    .opened{
+      width: 76%;
+      left: 12%;
+      top: 2%;
+    }
   }
   @media screen and (min-width: 1228.2px){
     .sec img{
@@ -250,11 +265,11 @@ li{
     .right-col{
       width: 600px;
     }
-  }
-  .opened{
-    width: 76%;
-    left: 12%;
-    bottom: 0;
+    .opened{
+      width: 76%;
+      left: 12%;
+      top: 0;
+    }
   }
   .high .opened{
     width: 38%;
@@ -400,6 +415,53 @@ li{
     left: 10%;
     top: 30%;
   }
+  @media screen and (min-width: 310px) {
+    .gallary-btn{
+      background: url(../images/gallary-xxs.png) no-repeat;
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 340px) {
+    .gallary-btn{
+      background: url(../images/gallary-xs.png) no-repeat;
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 400px) {
+    .gallary-btn{
+      background: url(../images/gallary-s.png) no-repeat;
+    }
+  }
+  @media screen and (min-width: 430px) {
+    .gallary-btn{
+      background: url(../images/gallary-sm.png) no-repeat;
+    }
+  }
+  @media screen and (min-width: 515px) {
+    .gallary-btn{
+      background: url(../images/gallary-md-5.png) no-repeat;
+    }
+  }
+  @media screen and (min-width: 565px) {
+    .gallary-btn{
+      background: url(../images/gallary-md-4.png) no-repeat;
+    }
+  }
+  @media screen and (min-width: 670px) {
+    .gallary-btn{
+      background: url(../images/gallary-md-3.png) no-repeat;
+    }
+  }
+  @media screen and (min-width: 740px){
+    .gallary-btn{
+      background: url(../images/gallary-md-2.png) no-repeat;
+    }
+  }
+  @media screen and (min-width: 880px){
+    .gallary-btn{
+      background: url(../images/gallary-md.png) no-repeat;
+    }
+  }
 }
 p{
   padding-left: 25px;
@@ -413,11 +475,6 @@ p{
 .phone-number{
   margin-top: 25px;
   text-align: center;
-}
-.call-back{
-  background-color: white;
-  height: 100px;
-  width: 47%;
 }
 a{
   background-color: white;
@@ -553,4 +610,7 @@ a{
 }
 .img-gallary:hover{
   cursor: pointer;
+}
+.opened:hover{
+  cursor: default;
 }
