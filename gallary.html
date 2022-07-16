@@ -13,7 +13,7 @@
         <a href = "index.html" id = "back-link">Вернуться назад</a>
         <h1 id = "gallary-title">Галерея работ</h1>
     </header>
-    <section class = "gallary">
+    <main class = "gallary">
       <section class = "first-group">
         <div class = "line">
           <img class = "img-gallary" src = "images/1.jpg" alt = "Причал">
@@ -72,26 +72,32 @@
           <img class = "img-gallary" id = "spec-img" src = "images/19.jpg" alt = "Причал">
         </div>
       </section>
-    </section>
+    </main>
     <script>
       const imgs = document.querySelectorAll('.img-gallary');
       const back = document.querySelector('#modal-background');
       back.style.display = `none`;
-      imgs.forEach((img) => {
-        img.addEventListener('click', function(){
-          if (img.classList.contains('opened') == false){
-            img.classList.add('opened');
-            back.style.height = `${document.body.clientHeight}px`;
-            back.style.display = `block`;
-          }
-        });
-      });
-      let closeBtn = document.querySelector('#close-btn');
-      closeBtn.addEventListener('click', function(){
-        let img = document.querySelector('.opened');
-        img.classList.remove('opened');
+
+      if(document.documentElement.clientWidth > 999){
+        const imgs = document.querySelectorAll('.img-gallary');
+        const back = document.querySelector('#modal-background');
         back.style.display = `none`;
-      });
+        imgs.forEach((img) => {
+          img.addEventListener('click', function(){
+            if (img.classList.contains('opened') == false){
+              img.classList.add('opened');
+              back.style.height = `${document.body.clientHeight}px`;
+              back.style.display = `block`;
+            }
+          });
+        });
+        let closeBtn = document.querySelector('#close-btn');
+        closeBtn.addEventListener('click', function(){
+          let img = document.querySelector('.opened');
+          img.classList.remove('opened');
+          back.style.display = `none`;
+        });
+      }
     </script>
   </body>
 </html>

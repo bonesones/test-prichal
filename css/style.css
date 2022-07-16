@@ -48,8 +48,8 @@ li{
   position: fixed;
 }
 .gallary-btn{
-  background: url(../images/gallary.jpg);
-  height: 100px;
+  border: 5px solid rgb(189 0 0);
+  height: 90px;
   width: 47%;
 }
 
@@ -82,7 +82,6 @@ li{
     flex-direction: row;
     position: relative;
     margin: 0 15px;
-    bottom: 25px;
     width: 100%;
   }
   .top-image{
@@ -183,6 +182,11 @@ li{
     height: 5px;
     margin: 50px 0;
   }
+  @media screen and (min-width: 1060px) {
+    .site-title-description{
+      bottom: 10px;
+    }
+  }
   @media screen and (max-width: 1085px) {
     .sec{
       line-height: 2.2;
@@ -198,14 +202,12 @@ li{
       line-height: 1.5;
     }
   }
-  @media screen and (max-width: 1150px) {
-    .gallary-btn{
-      background: url(../images/gallary-lg.jpg);
-    }
-  }
   @media screen and (min-width: 1190px) {
     ol{
       line-height: 1.6;
+    }
+    .site-title-description{
+      bottom: 15px;
     }
   }
   @media screen and (max-width: 1228px) {
@@ -281,6 +283,21 @@ li{
   }
 }
 @media screen and (min-width: 310px) and (max-width: 999.9px){
+  p{
+    padding-right: 25px;
+    text-align: center;
+  }
+  article{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #last p{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 2;
+  }
   #close-btn{
     top: 16%;
     left: 85%;
@@ -320,7 +337,6 @@ li{
     flex-direction: row;
     justify-content: center;
     position: relative;
-    bottom: 25px;
     width: 100%;
   }
   .main-description{
@@ -339,6 +355,7 @@ li{
     background-color: white;
     text-indent: 35px;
     letter-spacing: 2px;
+    line-height: 2;
     color: rgb(106, 97, 188);
     height: auto;
     margin: 10px 0;
@@ -347,6 +364,9 @@ li{
   main img{
       max-width: 100%;
       height: auto;
+  }
+  li{
+    padding-top: 15px;
   }
   #spec{
     display: flex;
@@ -415,51 +435,14 @@ li{
     left: 10%;
     top: 30%;
   }
-  @media screen and (min-width: 310px) {
-    .gallary-btn{
-      background: url(../images/gallary-xxs.png) no-repeat;
-      font-size: 16px;
+  @media screen and (min-width: 560px) {
+    .site-title-description{
+      bottom: 15px;
     }
   }
-  @media screen and (min-width: 340px) {
-    .gallary-btn{
-      background: url(../images/gallary-xs.png) no-repeat;
-      font-size: 18px;
-    }
-  }
-  @media screen and (min-width: 400px) {
-    .gallary-btn{
-      background: url(../images/gallary-s.png) no-repeat;
-    }
-  }
-  @media screen and (min-width: 430px) {
-    .gallary-btn{
-      background: url(../images/gallary-sm.png) no-repeat;
-    }
-  }
-  @media screen and (min-width: 515px) {
-    .gallary-btn{
-      background: url(../images/gallary-md-5.png) no-repeat;
-    }
-  }
-  @media screen and (min-width: 565px) {
-    .gallary-btn{
-      background: url(../images/gallary-md-4.png) no-repeat;
-    }
-  }
-  @media screen and (min-width: 670px) {
-    .gallary-btn{
-      background: url(../images/gallary-md-3.png) no-repeat;
-    }
-  }
-  @media screen and (min-width: 740px){
-    .gallary-btn{
-      background: url(../images/gallary-md-2.png) no-repeat;
-    }
-  }
-  @media screen and (min-width: 880px){
-    .gallary-btn{
-      background: url(../images/gallary-md.png) no-repeat;
+  @media screen and (min-width: 900px) {
+    .site-title-description{
+      bottom: 20px;
     }
   }
 }
@@ -478,10 +461,15 @@ p{
 }
 a{
   background-color: white;
-  line-height: 100px;
-  font-size: 22px;
-  color: rgb(247, 55, 55);
-  text-decoration: underline;
+  line-height: 90px;
+  font-size: 30px;
+  color: rgb(189, 0, 0);
+  text-decoration: none;
+}
+@media screen and (max-width: 550px) {
+  a{
+    font-size: 24px;
+  }
 }
 #id1{
   transform: rotate(12deg);
