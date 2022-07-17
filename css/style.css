@@ -22,6 +22,13 @@ h1{
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.gallary-btn{
+  background-color: white;
+  line-height: 90px;
+  color: rgb(189, 0, 0);
+  text-decoration: none;
+  font-size: 30px;
+}
 main{
   display: flex;
   justify-content: center;
@@ -58,6 +65,14 @@ li{
   border: 5px solid rgb(189 0 0);
   height: 90px;
   width: 47%;
+  border-radius: 15px;
+}
+.address{
+  background-color: white;
+  height: 100px;
+  width: 47%;
+  margin-right: 5px;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 1000px){
@@ -638,7 +653,6 @@ li{
       margin-left: 10%;
       margin-right: 10%;
     }
-
   }
   .opened{
     width: 100%;
@@ -650,12 +664,23 @@ li{
       bottom: 15px;
     }
   }
+  @media screen and (max-width: 458.9px) {
+    .gallary-btn{
+      font-size: 21px;
+    }
+  }
+  @media screen and (min-width: 459px) {
+    .gallaty-btn{
+      font-size: 30px;
+    }
+  ]
   @media screen and (min-width: 900px) {
     .site-title-description{
       bottom: 20px;
     }
   }
 }
+
 .f-p{
   text-align: center;
 }
@@ -673,13 +698,7 @@ li{
   text-align: center;
   font-size: 16px;
 }
-.gallary-btn{
-  background-color: white;
-  line-height: 90px;
-  font-size: 30px;
-  color: rgb(189, 0, 0);
-  text-decoration: none;
-}
+
 .address, .gallary-btn{
   border-radius: 15px;
 }
