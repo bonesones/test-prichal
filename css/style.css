@@ -76,6 +76,12 @@ li{
 }
 
 @media screen and (min-width: 1000px){
+  .img-gallary:hover{
+    cursor:pointer;
+  }
+  .opened:hover{
+    cursor: default;
+  }
   .address div{
     padding-top: 10px;
   }
@@ -515,7 +521,9 @@ li{
     transform-origin: top-left;
     transform: rotate(17deg);
   }
-
+  .address div{
+    padding-top: 10px;
+  }
   p{
     padding-right: 25px;
     text-align: center;
@@ -588,7 +596,7 @@ li{
     background-color: white;
     letter-spacing: 2px;
     line-height: 2;
-    color: rgb(106, 97, 188);
+    color: black;
     height: auto;
     margin: 10px 0;
   }
@@ -609,7 +617,7 @@ li{
     background-color: white;
     text-indent: 35px;
     letter-spacing: 2px;
-    color: rgb(106, 97, 188);
+    color: black;
     height: auto;
     margin: 10px 0;
   }
@@ -701,7 +709,6 @@ li{
   margin-right: 5px;
 }
 .phone-number{
-  margin-top: 25px;
   text-align: center;
   font-size: 16px;
 }
@@ -713,10 +720,4 @@ li{
   a{
     font-size: 24px;
   }
-}
-.img-gallary:hover{
-  cursor: pointer;
-}
-.opened:hover{
-  cursor: default;
 }
