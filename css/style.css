@@ -2,11 +2,18 @@
     font-family: "Mons";
     src: url(../Montserrat-Medium.ttf) format('truetype');
 }
+@font-face {
+    font-family: "Os";
+    src: url(../UZSans-Regularr.ttf) format('truetype');
+}
 body{
   background: rgb(2, 189, 242);
   font-family: "Mons";
   margin: 0;
   padding-bottom: 10px
+}
+h1{
+  font-family: "Os";
 }
 .top-image{
   max-height: 100%;
@@ -183,10 +190,8 @@ li{
     height: 5px;
     margin: 50px 0;
   }
-  @media screen and (min-width: 1060px) {
-    .site-title-description{
-      bottom: 10px;
-    }
+  .site-title-description{
+    bottom: 19px;
   }
   @media screen and (max-width: 1085px) {
     .sec{
@@ -208,7 +213,7 @@ li{
       line-height: 1.6;
     }
     .site-title-description{
-      bottom: 15px;
+      bottom:23px;
     }
   }
   @media screen and (max-width: 1228px) {
@@ -282,8 +287,205 @@ li{
   #spec-img{
     bottom: 25px;
   }
+  #id1{
+    transform: rotate(12deg);
+    transform-origin: bottom;
+  }
+  #id2{
+    position: relative;
+    top: 15px;
+    transform: rotate(3deg);
+    transform-origin: bottom;
+  }
+  #id3{
+    position: relative;
+    top: 12px;
+    transform: rotate(-4deg);
+    transform-origin: bottom;
+  }
+  #id4{
+    position: relative;
+    right: 3px;
+    top: 5px;
+    transform: rotate(-8deg);
+    transform-origin: bottom;
+  }
+  #id4-5{
+    position: relative;
+    right: 13px;
+    transform: rotate(-9deg);
+  }
+  #id5{
+    position: relative;
+    bottom: 5px;
+    right: 15px;
+    transform-origin: top-left;
+    transform: rotate(-10deg);
+  }
+  #id6{
+    position: relative;
+    bottom: 16px;
+    right: 20px;
+    transform-origin: top-left;
+    transform: rotate(-11deg);
+  }
+  #id7{
+    position: relative;
+    bottom: 28px;
+    right: 28px;
+    transform-origin: top-left;
+    transform: rotate(-12deg);
+  }
+  #id8{
+    position: relative;
+    bottom: 36px;
+    right: 35px;
+    transform-origin: top-left;
+    transform: rotate(-15deg);
+  }
+  #id9{
+    position: relative;
+    bottom: 44px;
+    right: 44px;
+    transform-origin: top-left;
+    transform: rotate(-9deg);
+  }
+  #id10{
+    position: relative;
+    bottom: 46px;
+    right: 49px;
+    transform-origin: top-left;
+    transform: rotate(-3deg);
+  }
+  #id11{
+    position: relative;
+    bottom: 46px;
+    right: 51px;
+    transform-origin: top-left;
+    transform: rotate(5deg);
+  }
+  #id12{
+    position: relative;
+    bottom: 46px;
+    right: 53px;
+    transform-origin: top-left;
+    transform: rotate(4deg);
+  }
+  #id13{
+    position: relative;
+    bottom: 43px;
+    right: 58px;
+    transform-origin: top-left;
+    transform: rotate(9deg);
+  }
+  #id14{
+    position: relative;
+    bottom: 40px;
+    right: 63px;
+    transform-origin: top-left;
+    transform: rotate(12deg);
+  }
+  #id15{
+    position: relative;
+    bottom: 33px;
+    right: 70px;
+    transform-origin: top-left;
+    transform: rotate(16deg);
+  }
 }
 @media screen and (min-width: 310px) and (max-width: 999.9px){
+  #id1{
+    transform: rotate(12deg);
+    top: 10px;
+    transform-origin: bottom;
+    position: relative;
+  }
+  #id2{
+    position: relative;
+    top: 15px;
+    transform: rotate(3deg);
+    transform-origin: bottom;
+  }
+  #id3{
+    position: relative;
+    top: 12px;
+    transform: rotate(-4deg);
+    transform-origin: bottom;
+  }
+  #id4{
+    position: relative;
+    right: 10px;
+    top: 5px;
+    transform: rotate(-17deg);
+  }
+  #id4-5{
+    position: relative;
+    right: 13px;
+    transform: rotate(-21deg);
+  }
+  #id5{
+    position: relative;
+    bottom: 8px;
+    right: 15px;
+    transform: rotate(-21deg);
+  }
+  #id6{
+    position: relative;
+    bottom: 16px;
+    right: 20px;
+    transform-origin: top-left;
+    transform: rotate(-13deg);
+  }
+  #id7{
+    position: relative;
+    bottom: 19px;
+    right: 24px;
+    transform-origin: top-left;
+    transform: rotate(-9deg);
+  }
+  #id8{
+    position: relative;
+    bottom: 20px;
+    right: 26px;
+    transform-origin: top-left;
+    transform: rotate(-3deg);
+  }
+  #id9{
+    position: relative;
+    bottom: 20px;
+    right: 26px;
+    transform-origin: top-left;
+    transform: rotate(-3deg);
+  }
+  #id10{
+    position: relative;
+    bottom: 19px;
+    right: 31px;
+    transform-origin: top-left;
+    transform: rotate(5deg);
+  }
+  #id11{
+    position: relative;
+    bottom: 14px;
+    right: 34px;
+    transform-origin: top-left;
+    transform: rotate(5deg);
+  }
+  #id12{
+    position: relative;
+    bottom: 14px;
+    right: 33px;
+    transform-origin: top-left;
+    transform: rotate(13deg);
+  }
+  #id13{
+    position: relative;
+    bottom: 8px;
+    right: 37px;
+    transform-origin: top-left;
+    transform: rotate(17deg);
+  }
+
   p{
     padding-right: 25px;
     text-align: center;
@@ -429,6 +631,7 @@ li{
       margin-left: 10%;
       margin-right: 10%;
     }
+
   }
   .opened{
     width: 100%;
@@ -467,134 +670,12 @@ p{
   color: rgb(189, 0, 0);
   text-decoration: none;
 }
+.address, .gallary-btn{
+  border-radius: 15px;
+}
 @media screen and (max-width: 550px) {
   a{
     font-size: 24px;
-  }
-}
-#id1{
-  transform: rotate(12deg);
-  transform-origin: bottom;
-}
-#id2{
-  position: relative;
-  top: 15px;
-  transform: rotate(3deg);
-  transform-origin: bottom;
-}
-#id3{
-  position: relative;
-  top: 12px;
-  transform: rotate(-4deg);
-  transform-origin: bottom;
-}
-#id4{
-  position: relative;
-  right: 3px;
-  top: 5px;
-  transform: rotate(-8deg);
-  transform-origin: bottom;
-}
-#id5{
-  position: relative;
-  bottom: 5px;
-  right: 15px;
-  transform-origin: top-left;
-  transform: rotate(-10deg);
-}
-#id6{
-  position: relative;
-  bottom: 16px;
-  right: 20px;
-  transform-origin: top-left;
-  transform: rotate(-11deg);
-}
-#id7{
-  position: relative;
-  bottom: 28px;
-  right: 28px;
-  transform-origin: top-left;
-  transform: rotate(-12deg);
-}
-#id8{
-  position: relative;
-  bottom: 36px;
-  right: 35px;
-  transform-origin: top-left;
-  transform: rotate(-15deg);
-}
-#id9{
-  position: relative;
-  bottom: 44px;
-  right: 44px;
-  transform-origin: top-left;
-  transform: rotate(-9deg);
-}
-#id10{
-  position: relative;
-  bottom: 46px;
-  right: 49px;
-  transform-origin: top-left;
-  transform: rotate(-3deg);
-}
-#id11{
-  position: relative;
-  bottom: 46px;
-  right: 51px;
-  transform-origin: top-left;
-  transform: rotate(5deg);
-}
-#id12{
-  position: relative;
-  bottom: 46px;
-  right: 53px;
-  transform-origin: top-left;
-  transform: rotate(4deg);
-}
-#id13{
-  position: relative;
-  bottom: 43px;
-  right: 58px;
-  transform-origin: top-left;
-  transform: rotate(9deg);
-}
-#id14{
-  position: relative;
-  bottom: 40px;
-  right: 63px;
-  transform-origin: top-left;
-  transform: rotate(12deg);
-}
-#id15{
-  position: relative;
-  bottom: 33px;
-  right: 70px;
-  transform-origin: top-left;
-  transform: rotate(16deg);
-}
-@media screen and (max-width: 370px) {
-  #id8{
-    right: 33px;
-    transform: rotate(-13deg);
-  }
-  #id9{
-    right: 41px;
-    transform: rotate(-16deg);
-  }
-  #id10{
-    right: 46px;
-  }
-  #id11{
-    right: 49px;
-    transform: rotate(3deg);
-    bottom: 47px;
-  }
-  #id14{
-    right: 60px;
-  }
-  #id15{
-    right: 65px;
-    transform: rotate(16deg);
   }
 }
 .img-gallary:hover{

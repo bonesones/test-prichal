@@ -3,7 +3,6 @@
   <head>
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
     <title>Причал</title>
     <link rel = "stylesheet" href="css/style.css">
   </head>
@@ -12,10 +11,11 @@
       <img src = "images/header-image.jpg" alt="Причал" height = "227" width="600" class = "top-image">
       <div class = "site-title">
         <h1 id = "main-tag">
-          <div id = "id1">с</div>
+          <div id = "id1">C</div>
           <div id = "id2">в</div>
           <div id = "id3">о</div>
           <div id = "id4">й</div>
+          <div id = "id4-5">-</div>
           <div id = "id5">п</div>
           <div id = "id6">р</div>
           <div id = "id7">и</div>
@@ -28,11 +28,12 @@
         </h1>
         <div class = "site-title-description">
           <div class = "address">
-            <b>Вологда, ул. Пугачёва, 26</b>
-            <div class = "phone-number"><b>т. +7(921) 123-42-23</b></div>
+            <div><b>Вологда</b></div>
+            <div><b>ул. Пугачёва, 26</b></div>
+            <div class = "phone-number"><b>т. +7(911) 123-42-23</b></div>
           </div>
           <a class = "gallary-btn" href = "gallary.html">
-            Галерея
+            Фотогалерея
           </a>
         </div>
       </div>
@@ -55,7 +56,7 @@
       <div class = "sec" id = "spec">
         <img src = "images/prich2.jpg" alt = "Причал" width = "535" height = "400">
         <article class = "about-info unusual">
-          <h3 class = parag><b>Преимущества наших понтонов:</b></h3>
+          <h3 class = parag><b>Преимущества наши понтонов:</b></h3>
           <ol style = "text-align:initial;">
             <b>
               <li>Лёгкость (исключает использование тяжёлой и дорогостоящей техники) при монтаже</li>
@@ -89,23 +90,25 @@
       const block = document.querySelector('.site-title');
       const tag = document.querySelector('#main-tag');
       if (document.documentElement.clientWidth <= 550){
-        if (document.documentElement.clientWidth <= 388){
-          tag.style.fontSize = "24px";
-        } else {
-          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 15)}px`;
+        if (document.documentElement.clientWidth <= 348){
+          tag.style.fontSize = "28px";
+        } else if(document.documentElement.clientWidth <= 388) {
+            tag.style.fontSize = "32px";
+        } else{
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 10)}px`;
         }
       } else if (document.documentElement.clientWidth >= 550 && document.documentElement.clientWidth < 1000){
         if (document.documentElement.clientWidth > 630 && document.documentElement.clientWidth < 810){
-          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 32)}px`;
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 28)}px`;
         } else if (document.documentElement.clientWidth < 630){
-          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 22)}px`;
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 18)}px`;
         } else if (document.documentElement.clientWidth > 810 ){
-          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 46)}px`;
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 48)}px`;
         }
       } else if (document.documentElement.clientWidth < 1095) {
-        tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 18)}px`;
+        tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 8)}px`;
       } else {
-        tag.style.fontSize = `41px`;
+        tag.style.fontSize = `48px`;
       }
     </script>
   </body>
