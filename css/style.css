@@ -76,6 +76,12 @@ li{
 }
 
 @media screen and (min-width: 1000px){
+  .address div{
+    padding-top: 10px;
+  }
+  .parag{
+    padding-left: 35px;
+  }
   .main-header{
     display: flex;
     justify-content: center;
@@ -146,6 +152,7 @@ li{
   }
   #spec img{
     width: 535px;
+    height: auto;
   }
   .unusual{
     background-color: white;
