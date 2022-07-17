@@ -121,6 +121,8 @@ li{
     letter-spacing: 2px;
     color: black;
     height: 460px;
+    display: flex;
+    align-items: center;
   }
   .sec{
     display: flex;
@@ -236,12 +238,15 @@ li{
       width: 43%;
       height: 460px;
       font-size: 20px;
+      display: flex;
+      align-items: center;
     }
     .unusual{
       width: 50%;
     }
     #spec img{
       width: 43%;
+      height: auto;
     }
     .sec{
       justify-content: space-between;
@@ -654,7 +659,7 @@ li{
 .f-p{
   text-align: center;
 }
-.parag{
+.usual .parag{
   padding-left: 25px;
 }
 .address{
