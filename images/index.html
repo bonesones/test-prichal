@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Причал</title>
+    <link rel = "stylesheet" href="css/style.css">
+  </head>
+  <body id = "main-body">
+    <header class = "main-header" style = "text-align: center">
+      <img src = "images/header-image.jpg" alt="Причал" height = "227" width="600" class = "top-image">
+      <div class = "site-title">
+        <h1 id = "main-tag">
+          <div id = "id1">C</div>
+          <div id = "id2">в</div>
+          <div id = "id3">о</div>
+          <div id = "id4">й</div>
+          <div id = "id4-5">-</div>
+          <div id = "id5">п</div>
+          <div id = "id6">р</div>
+          <div id = "id7">и</div>
+          <div id = "id8">ч</div>
+          <div id = "id9">а</div>
+          <div id = "id10">л</div>
+          <div id = "id11">.</div>
+          <div id = "id12">р</div>
+          <div id = "id13">ф</div>
+        </h1>
+        <div class = "site-title-description">
+          <div class = "address">
+            <div><b>г.Вологда</b></div>
+            <div><b>ул. Пугачёва, 26</b></div>
+            <div class = "phone-number"><b>т. +7(921) 123-42-23</b></div>
+          </div>
+          <a class = "gallary-btn" href = "gallary.html">
+            Фотогалерея
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div style = "line-height: 1.6;" class = "main-description">
+        <p class = "sec-par f-p"><b>Если Вы являетесь владельцем участка на берегу водоёма, то рано или поздно
+          встанет вопрос о строительстве причала.</b></p>
+        <p class = "sec-par f-p"><b>Мы предлагаем Вам с минимальными финансовыми затратами, без привлечения
+        дорогостоящей техники и множества согласований получить "под ключ" свой причал.</b></p>
+      </div>
+      <div class = "sec">
+        <div class = "about-info usual">
+          <p class = "parag"><b>Наша организация занимается изготовлением понтонов на основе полиэтиленовых труб.
+          С их помощью может быть изготовлен причал для катера, лодки, бе&shy;седка на воде и другие плавучие конструкции для работы
+          и отдыха на воде.</b>
+        </div>
+        <img src = "images/prich1.jpg" alt = "Причал" width = "600" height = "460" style = "max-height: 460px;" id = "first">
+      </div>
+      <div class = "sec" id = "spec">
+        <img src = "images/prich2.jpg" alt = "Причал" width = "535" height = "400">
+        <article class = "about-info unusual">
+          <h3 class = parag><b>Преимущества наших понтонов:</b></h3>
+          <ol style = "text-align:initial;">
+            <b>
+              <li>Лёгкость (исключает использование тяжёлой и дорогостоящей техники) при монтаже.</li>
+              <li>Высокая прочность.</li>
+              <li>Устойчивость к коррозии.</li>
+              <li>Постоянная высота возвышения, независимо от колебания воды на водоёме.</li>
+              <li>Не требуется демонтаж понтонов на зиму (за исключением водоёмов с ледоходом).</li>
+            </b>
+          </ol>
+        </div>
+      </div>
+      <div class = "sec">
+        <div class = "about-info usual">
+          <p class = "parag"><b>Поплавки выполнены из высокотехнологического полиэтилена. Крепление
+            каркаса к поплавкам осуществляется с помощью металлических хомутов. Каркас понтонов - металл
+            с водостойким покрытием. В качестве настила используется террасная доска из сосны.
+          </b>
+        </div>
+        <div class = "right-col">
+          <img src = "images/prich3.jpg" alt = "Причал" width = "600" height = "250" id = "last-img">
+          <div id = "last">
+            <p><b>Мы готовы изготовить любые причалы согласно Вашим размерам. Причалы комплектуются
+            леерным огражденнием, лестницей для спуска в воду, сходней (трап с берега на понтон),
+            кнехтами и системой якорения.</b></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.querySelector('.main-description').style.width = `${document.querySelector('.sec').clientWidth}px`;
+      const block = document.querySelector('.site-title');
+      const tag = document.querySelector('#main-tag');
+      if (document.documentElement.clientWidth <= 550){
+        if (document.documentElement.clientWidth <= 348){
+          tag.style.fontSize = "28px";
+        } else if(document.documentElement.clientWidth <= 388) {
+            tag.style.fontSize = "32px";
+        } else{
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 10)}px`;
+        }
+      } else if (document.documentElement.clientWidth >= 550 && document.documentElement.clientWidth < 1000){
+        if (document.documentElement.clientWidth > 630 && document.documentElement.clientWidth < 810){
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 28)}px`;
+        } else if (document.documentElement.clientWidth < 630){
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 18)}px`;
+        } else if (document.documentElement.clientWidth > 810 ){
+          tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) - 48)}px`;
+        }
+      } else if (document.documentElement.clientWidth < 1095) {
+        tag.style.fontSize = `${Math.ceil((document.documentElement.clientWidth / 10) / 2 - 8)}px`;
+      } else {
+        tag.style.fontSize = `48px`;
+      }
+    </script>
+  </body>
+</html>
